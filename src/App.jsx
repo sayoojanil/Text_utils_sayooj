@@ -27,7 +27,7 @@ function App() {
   const toggleMode = () => {
     if (mode === 'light') {
       setMode('dark');
-      document.body.style.backgroundColor = '#091934ff';
+      document.body.style.backgroundColor = '#102e61ff';
       document.body.style.color = 'white';
       showAlert("Dark mode is activated", "success");
       document.title = 'Sayooj Web - Dark Mode';
@@ -44,11 +44,12 @@ function App() {
     <Router>
       <NavBar title="Sayooj" mode={mode} toggleMode={toggleMode} />
       <div className="container">
-        <Alert alert={alert}/>
         <Routes>
           <Route path="/" element={<Form showAlert={showAlert} />} /> {/* ✅ Home fixed */}
           <Route path="/about" element={<About />} />
         </Routes>
+                <Alert alert={alert}/>
+
       </div>
     </Router>
   );
