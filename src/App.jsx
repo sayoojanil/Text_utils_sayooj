@@ -45,7 +45,8 @@ function App() {
       <NavBar title="Sayooj" mode={mode} toggleMode={toggleMode} />
       <div className="container">
         <Routes>
-          <Route path="/" element={<Form showAlert={showAlert} />} /> {/* ✅ Home fixed */}
+          <Route path="/" element={<Form showAlert={showAlert} mode={mode} />} />
+
           <Route path="/about" element={<About />} />
         </Routes>
                 <Alert alert={alert}/>

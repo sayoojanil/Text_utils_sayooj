@@ -7,7 +7,7 @@ export default function NavBar(props) {
     <div>
       <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
         <div className="container-fluid">
-          <a className="navbar-brand">Sayooj letter</a>
+          <a className="navbar-brand">WriteFlow</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" 
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
             aria-expanded="false" aria-label="Toggle navigation">
